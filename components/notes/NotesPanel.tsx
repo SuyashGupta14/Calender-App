@@ -405,10 +405,10 @@ export default function NotesPanel({
                   </p>
                 )}
 
-                {/* Action buttons — show on hover */}
+                {/* Action buttons — show on hover (desktop) / always show (mobile) */}
                 {editingId !== note.id && (
                   <div
-                    className="opacity-0 group-hover:opacity-100"
+                    className="opacity-100 lg:opacity-0 lg:group-hover:opacity-100"
                     style={{
                       position: "absolute",
                       top: 10,
